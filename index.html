@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8">
@@ -10,13 +10,13 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="w-[100vw] flex justify-between p-5 nav">
+    <nav class="w-[100vw] flex justify-between p-5 nav" id="nav">
         <img src="./assets/logo.png" width="200" height="50" class="ml-7">
         <div class="w-[60%] flex justify-evenly ">
-            <a href="" class="nav_href ">Home</a>
-            <a href="" class="nav_href ">About</a>
-            <a href="" class="nav_href ">Services</a>
-            <a href="" class="nav_href ">Contact</a>
+            <a href="#nav" class="nav_href ">Home</a>
+            <a href="#about" class="nav_href ">About</a>
+            <a href="#services" class="nav_href ">Services</a>
+            <a href="#contact" class="nav_href ">Contact</a>
             <button
                 class="border-2 border-[#cdd1d9] rounded-sm w-[8rem] h-[2rem] flex items-center justify-center text-sm text-[#5f687b] font-medium started_btn">Get
                 Started</button>
@@ -25,7 +25,7 @@
     <!-- HOME SECTION -->
     <div class="w-[88vw] h-[70vh] m-auto flex">
         <!-- LEFT SECTION -->
-        <div class="w-[50%] justify-center flex flex-col gap-y-4 p-4">
+        <div class="w-[50%] justify-center flex flex-col gap-y-4 p-4 ">
             <p class="text-text-[#5f687b] text-5xl font-semibold">Elegant and creative solutions</p>
             <span class="text-[#5f687b] text-xl">We are team of talented designers making websites with Bootstrap</span>
             <button
@@ -41,40 +41,127 @@
     <!-- CARDS -->
     <div class="w-[88vw] m-auto">
         <div class="w-[100%] flex gap-3 ">
-            <div class="bg-[#e7e7ed] w-[33.33%] p-5 flex flex-col gap-y-2">
-                <img src="./assets/icon1.svg" width="30">
+            <div class="bg-[#e7e7ed] w-[32.32%] p-5 flex flex-col gap-y-2 rounded-md shadow-xl">
+                <img src="./assets/icon1.svg" width="32">
                 <span class="text-lg text-[#494c51] font-medium tracking-wide">Lorem Ipsum</span>
-                <p class="text-md text-[#6d6f72]">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                <p class="text-md text-[#6d6f72]">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                    excepturi sint occaecati cupiditate non
                     provident</p>
             </div>
-            
-            <div class="bg-[#e7e7ed] w-[33.33%] p-5 flex flex-col gap-y-2">
-                <img src="./assets/icon2.svg" width="30">
+
+            <div class="bg-[#e7e7ed] w-[32.32%] p-5 flex flex-col gap-y-2 rounded-md shadow-xl">
+                <img src="./assets/icon2.svg" width="32">
                 <span class="text-lg text-[#494c51] font-medium tracking-wide">Lorem Ipsum</span>
-                <p class="text-md text-[#6d6f72]">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                <p class="text-md text-[#6d6f72]">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                    excepturi sint occaecati cupiditate non
                     provident</p>
             </div>
-            <div class="bg-[#e7e7ed] w-[33.33%] p-5 flex flex-col gap-y-2">
-                <img src="./assets/icon3.svg" width="30">
+            <div class="bg-[#e7e7ed] w-[32.32%] p-5 flex flex-col gap-y-2 rounded-md shadow-xl">
+                <img src="./assets/icon3.svg" width="32">
                 <span class="text-lg text-[#494c51] font-medium tracking-wide">Lorem Ipsum</span>
-                <p class="text-md text-[#6d6f72]">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                <p class="text-md text-[#6d6f72]">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                    excepturi sint occaecati cupiditate non
                     provident</p>
             </div>
         </div>
     </div>
 
-        <!-- ABOUT SECTION -->
-    <div class="w-[88vw] m-auto border-2 border-black p-7 flex items-center">
-            <!-- LEFT-SECTION -->
-            <div class="w-[50%] border-2 border-black">
-                <img src="./assets/about.png" class="h-[100%] w-[100%]">
-            </div>
-            <!-- RIGHT SECTION -->
-            <div class="w-[50%] border-2 border-black">
-                <p class="">Voluptatem dignissimos provident quasi corporis voluptates</p>
-            </div>
+    <!-- ABOUT SECTION -->
+
+    <div class="w-[88vw] m-auto p-7 flex gap-5 mt-14" id="about">
+        <!-- LEFT-SECTION -->
+        <div class="w-[50%]">
+            <img src="./assets/about.png" class="h-[100%] w-[100%]">
+        </div>
+        <!-- RIGHT SECTION -->
+        <div class="w-[50%] flex flex-col gap-y-3 p-3">
+            <p class="text-2xl text-[#494c51] font-semibold">Voluptatem dignissimos provident quasi corporis voluptates
+            </p>
+            <p class="text-md text-[#6d6f72] font-medium ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <li class="text-md text-[#6d6f72] font-medium">Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            <li class="text-md text-[#6d6f72] font-medium">Duis aute irure dolor in reprehenderit in voluptate velit
+            </li>
+            <li class="text-md text-[#6d6f72] font-medium"> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda</li>
+            <p class="text-md text-[#6d6f72] font-medium">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
     </div>
 
+    <!-- SERVICES SECTION -->
+    <div class="w-[100%] bg-[#eaebed] p-6 grid gap-y-8" id="services">
+        <h1 class="text-center text-3xl font-semibold tracking-wide text-[#4c4d4e]">SERVICES</h1>
+        <div class="w-[80vw] m-auto flex flex-wrap gap-3 ">
+            <div class="w-[32%] bg-white flex flex-col items-center p-9 gap-y-3">
+                <img src="./assets/icon4.svg" width="32">
+                <span class="text-lg font-semibold text-[#6d6f72]">Lorem Ipsum</span>
+                <span class="text-md font-normal text-[#828385]">Voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias excepturi</span>
+            </div>
+            <div class="w-[32%] bg-white flex flex-col items-center p-9 gap-y-3">
+                <img src="./assets/icon5.svg" width="25">
+                <span class="text-lg font-semibold text-[#6d6f72]">Lorem Ipsum</span>
+                <span class="text-md font-normal text-[#828385]">Voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias excepturi</span>
+            </div>
+            <div class="w-[32%] bg-white flex flex-col items-center p-9 gap-y-3">
+                <img src="./assets/icon6.svg" width="32">
+                <span class="text-lg font-semibold text-[#6d6f72]">Lorem Ipsum</span>
+                <span class="text-md font-normal text-[#828385]">Voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias excepturi</span>
+            </div>
+            <div class="w-[32%] bg-white flex flex-col items-center p-9 gap-y-3">
+                <img src="./assets/icon7.svg" width="32">
+                <span class="text-lg font-semibold text-[#6d6f72]">Lorem Ipsum</span>
+                <span class="text-md font-normal text-[#828385]">Voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias excepturi</span>
+            </div>
+            <div class="w-[32%] bg-white flex flex-col items-center p-9 gap-y-3">
+                <img src="./assets/icon8.svg" width="32">
+                <span class="text-lg font-semibold text-[#6d6f72]">Lorem Ipsum</span>
+                <span class="text-md font-normal text-[#828385]">Voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias excepturi</span>
+            </div>
+            <div class="w-[32%] bg-white flex flex-col items-center p-9 gap-y-3">
+                <img src="./assets/icon9.svg" width="32">
+                <span class="text-lg font-semibold text-[#6d6f72]">Lorem Ipsum</span>
+                <span class="text-md font-normal text-[#828385]">Voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias excepturi</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+
+    <div class="w-[100%] flex flex-col items-center gap-10 p-8" id="contact">
+        <h1 class="text-3xl font-semibold tracking-wide text-[#4c4d4e]">Contact US</h1>
+       
+            <form class="w-[30vw] h-[50vh] border-2 border-black flex flex-col gap-y-6 p-4 bg-[#eaebed] items-center justify-center rounded-xl shadow-2xl shadow-black">
+                <div>
+                    <label class="text-xl font-medium">Your Name : </label>
+                    <input type="text"  class="outline-none border-b-2 border-black">
+                </div>
+
+                <div>
+                    <label class="text-xl font-medium">Your Email : </label>
+                    <input type="email" class="outline-none border-b-2 border-black">
+                </div>
+
+                <div> 
+                    <label class="text-xl font-medium">Subject : </label>
+
+                    <input type="text" class="outline-none border-b-2 border-black">
+                </div>
+
+                <div>
+                    <label class="text-xl font-medium">Message : </label>
+                    <input type="text" class="outline-none border-b-2 border-black">
+                </div>
+
+            </form>
+       
+    </div>
 </body>
 
 </html>
