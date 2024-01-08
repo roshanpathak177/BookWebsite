@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav{
+    background: rgb(255,255,255);
+background: linear-gradient(187deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(170,245,235,1) 100%);
+}
+
+.started_btn:hover{
+    background-color: #206bfb;
+    color:white;
+    border-color: #206bfb;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.nav_href{
+    color:#5f687b;
+    font-weight: 500;
+}
+.nav_href:hover{
+    color:#16df7e;
+}
+
+
+.right_img{
+    animation: bounce 5s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(-10%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(-5%);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
